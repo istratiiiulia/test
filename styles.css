@@ -38,8 +38,11 @@ body {
 
 .navbar-nav {
   list-style: none;
-  display: flex;
-  gap: 2rem;
+  display: flex;       
+  flex-direction: row; 
+  gap: 2rem;           
+  margin: 0;           
+  padding: 0;         
 }
 
 .navbar-nav li a {
