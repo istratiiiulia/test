@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FNAF Fan Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- MAIN CONTENT -->
+<div class="container my-5">
+
+  <h1>Five Nights at Freddy’s – Fan Theories</h1>
+  <p>
+    This is a fan-made website about Five Nights at Freddy’s.
+    Here you can read theories, ideas, and opinions from the community.
+  </p>
+
+  <!-- THEORIES SECTION -->
+  <h3 id="theories">Popular Theories</h3>
+  <ul>
+    <li>
+      <u>The Bite of '87:</u> A theory suggests that
+      the animatronic responsible for the Bite of '87 was
+      actually Mangle, not Foxy.
+    </li>
+    <li>
+      <u>Phone Guy's Identity:</u> Some fans believe
+      that Phone Guy is actually a former employee who
+      survived an attack and is now guiding new night guards.
+    </li>
+    <li>
+      <u>Multiple Timelines:</u> There is a theory
+      that each game represents a different timeline,
+      explaining inconsistencies in the lore.
+    </li>
+    <li>
+      <u>Golden Freddy's Origins:</u> Some believe
+      Golden Freddy is possessed by two children's spirits: Cassidy and the crying child from the fourth part of the franchise.
+    </li>
+    <li>
+      <u>The Puppet's Role:</u> A popular theory
+      suggests that The Puppet is the key to understanding
+      the entire FNAF lore, acting as a guardian for the
+      children's souls.
+    </li>
+    <li>
+      <u>Springtrap's Past:</u> Fans theorize that
+      Springtrap is not just William Afton but also
+      contains remnants of the souls of the children he
+      harmed.
+    </li>
+    <li>
+      <u>The Missing Children Incident:</u> Some
+      theories propose that the incident involved more
+      children than officially stated, leading to
+      additional hauntings.
+    </li>
+    </ul>
+
+  <h3>Theory details</h3>
+  <p>
+     The most theories are based on minigames from the third part, including 
+     those hidden minigames which are very important for understanding the depth and darkness of the FnaF's lore.
+     In fact, this franchise couldn't be just a simple horror for kids. The game series is a real challenge for those 
+     who like to think and find the most hidden meanings. Even after 12 years from the first release, the fans are still trying to find new theories and explanations for
+     the mysteries of Freddy Fazbear's Pizza. </p>
+     <p> The most debated theories are those involving the Puppet and who Golden Freddy is possessed by. In our opinion, the crying child 
+     could be in the Golden Freddy’s animatronic only because the "It's me text" which appears when he's with us in the security room. That 
+     means that the crying child tries to talk to his brother Michael who technically killed him. s
+    </p>
+
+
+  <h3 class="mt-5">Did You Know?</h3>
+  <ul>
+    <li>The phrase “I always come back” appears multiple times in the series</li>
+    <li>Golden Freddy behaves differently from other animatronics</li>
+    <li>Some endings contradict each other on purpose</li>
+  </ul>
+
+</div>
+
+<div id="contact" class="container my-5">
+  <h3>Contact / Send a Theory</h3>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control"
+      id="exampleFormControlInput1"
+      placeholder="name@example.com">
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Your theory</label>
+    <textarea class="form-control"
+      id="exampleFormControlTextarea1"
+      rows="3"></textarea>
+  </div>
+
+
+  <button type="button" class="btn btn-primary" id="liveToastBtn">
+    Send theory
+  </button>
+</div>
+
+<div class="toast-container">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">FNAF Fan</strong>
+      <small>now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      Your theory was sent.
+    </div>
+  </div>
+</div>
+
+<!-- OFFCANVAS EXTRA INFO -->
+<div id="extra" class="container my-5">
+  <a class="btn btn-primary" data-bs-toggle="offcanvas"
+     href="#offcanvasExample">
+    Open extra info
+  </a>
+</div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1"
+     id="offcanvasExample">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Extra Information</h5>
+    <button type="button" class="btn-close"
+      data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>
+      This section can contain extra facts,
+      hidden lore, or unused theories.
+    </p>
+
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle"
+        type="button" data-bs-toggle="dropdown">
+        More
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Books</a></li>
+        <li><a class="dropdown-item" href="#">Games</a></li>
+        <li><a class="dropdown-item" href="#">Timeline</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="text-center py-4 mt-5 border-top">
+  <p>
+    This website was created as a school project using Bootstrap examples.
+  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>    
+  const toastTrigger = document.getElementById('liveToastBtn')
+  const toastLiveExample = document.getElementById('liveToast')
+
+  if (toastTrigger) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastTrigger.addEventListener('click', () => {
+      toastBootstrap.show()
+    })
+  }
+</script>
+
+</body>
+</html>

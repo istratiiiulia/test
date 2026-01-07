@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Pumpkin Night';
+    src: url('fonts/Pumpkin\ Night.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Pumpkin Night', Arial, Helvetica, sans-serif;
+  background-color: #0b0b0b;
+  color: #e5e5e5;
+}
+
+.navbar {
+  background-color: #111;        
+  border-bottom: 2px solid #550000;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+}
+
+h3 {
+    color: #ff4c4c;
+  margin-bottom: 20px;
+}
+
+#contact {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+
+/* Buttons */
+.btn-primary {
+  box-shadow: 0 0 10px rgba(220,53,69,0.4);
+}
+
+.toast {
+  background-color: #111;
+  color: #a12626;
+}
+
+.offcanvas {
+  background-color: #0b0b0b;
+  color: #cb3b3b;
+}
+
+footer {
+  color: #999;
+  font-size: 0.9rem;
+}
