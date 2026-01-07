@@ -151,3 +151,25 @@ a:hover {
   color: #ff5555;
   text-shadow: 0 0 8px rgba(255,45,45,0.7);
 }
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    width: 200px;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #550000;
+    display: none;
+  }
+
+  .navbar-nav.show {
+    display: flex; 
+  }
+}
