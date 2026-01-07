@@ -13,8 +13,28 @@
 
 <body>
 
-<!-- MAIN CONTENT -->
-<div class="container my-5">
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="brand">FNAF FAN</a>
+
+    <ul class="navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#theories">Theories</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#extra">Extra</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+
+<div class="container">
 
   <h1>Five Nights at Freddy’s – Fan Theories</h1>
   <p>
@@ -22,7 +42,6 @@
     Here you can read theories, ideas, and opinions from the community.
   </p>
 
-  <!-- THEORIES SECTION -->
   <h3 id="theories">Popular Theories</h3>
   <ul>
     <li>
@@ -122,7 +141,6 @@
   </div>
 </div>
 
-<!-- OFFCANVAS EXTRA INFO -->
 <div id="extra" class="container my-5">
   <a class="btn btn-primary" data-bs-toggle="offcanvas"
      href="#offcanvasExample">
@@ -176,6 +194,16 @@
     })
   }
 </script>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.navbar-nav');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+</script>
+
 
 </body>
 </html>
